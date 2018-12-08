@@ -1,10 +1,10 @@
 {
-  "name": "packagecloud-installer",
-  "version": "0.0.2",
+  "name": "packagecloud-install",
+  "version": "0.0.1",
   "description": "A command to generate your packagecloud .npmrc file",
   "main": "index.js",
   "bin": {
-    "packagecloud": "bin/packagecloud-installer.js"
+    "packagecloud-install": "bin/packagecloud-install.js"
   },
   "dependencies": {
     "axios": "^0.18.0"
