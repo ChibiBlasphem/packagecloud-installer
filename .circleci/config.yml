@@ -5,12 +5,16 @@ jobs:
       - image: circleci/node:10.12.0
     steps:
       - checkout
+      - run:
+          name: Authenticate with registry
+          command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" > .npmrc
       - run: npm publish
 workflows:
   version: 2
   publish:
     jobs:
       - build:
+          context: GlobalNpm
           filters:
             branches:
               ignore: /.*/
