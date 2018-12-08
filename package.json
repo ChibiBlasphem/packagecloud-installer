@@ -1,6 +1,6 @@
 {
   "name": "packagecloud",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A command to generate your packagecloud .npmrc file",
   "main": "index.js",
   "bin": {
