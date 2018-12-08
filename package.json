@@ -4,7 +4,7 @@
   "description": "A command to generate your packagecloud .npmrc file",
   "main": "index.js",
   "bin": {
-    "packagecloud": "packagecloud-installer.js"
+    "packagecloud": "bin/packagecloud-installer.js"
   },
   "dependencies": {
     "axios": "^0.18.0"
