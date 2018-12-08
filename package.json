@@ -1,5 +1,5 @@
 {
-  "name": "packagecloud",
+  "name": "packagecloud-installer",
   "version": "0.0.1",
   "description": "A command to generate your packagecloud .npmrc file",
   "main": "index.js",
