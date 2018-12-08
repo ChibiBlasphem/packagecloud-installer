@@ -3,9 +3,8 @@ const os = require('os')
 const fs = require('fs')
 const { promisify } = require('util')
 const axios = require('axios')
-const [node, file, repo] = process.argv
 
-async function createNpmrc(repoPath) {
+module.exports = async function createNpmrc(repoPath) {
   if (!repoPath) {
     console.error('Repo path must be specified, ie: node index.js username/repo')
     process.exit(1)
@@ -51,5 +50,3 @@ async function createNpmrc(repoPath) {
     process.exit(1)
   }
 }
-
-createNpmrc(repo)
